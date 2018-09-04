@@ -1,0 +1,14 @@
+HTTP Parameter Pollution leads to Full Path Disclosure in Azure Web Platform --- Third Time Reporting, No bounty given by Microsoft. Please do not waste time in MSRC.
+
+Manual implementation without video:
+This was one of the platform located in azure platform:
+https://lnkd.in/ecabnwv
+and passed parameter was given below:
+GET /api/Reports/AuditEvents?request=%7B%22activityType%22%3A%22User%22%2C%22actorObjectId%22%3A%22931cfe3e-f797-4ff5-89d3-1a45fddd76bf%22%2C%22targetObjectId%22%3A%22931cfe3e-f797-4ff5-89d3-1a45fddd76bf%22%2C%22startDateTime%22%3A%222018-07-16T18%3A30%3A00.000Z%22%2C%22endDateTime%22%3A%222018-07-24T06%3A24%3A49.641Z%22%2C%22nextLink%22%3A%22%22%2C%22searchText%22%3A%22%22%2C%22actor%22%3A%22%22%2C%22target%22%3A%22%22%2C%22activity%22%3A%22All%22%2C%22category%22%3A%22All%22%2C%22source%22%3Anull%2C%22isActivityExactMatch%22%3Atrue%7D HTTP/1.1
+Host: Host: main.iam.ad.ext.azure.com
+Referer: https://lnkd.in/emyYRPe
+
+
+Video Link:
+
+https://dms.licdn.com/playback/C4E05AQESQVK8q1ym0g/75ce67f014a648d39a35505fc28124ad/feedshare-mp4_500-captions-thumbnails/1507940118923-hysdc8?e=1536123600&v=beta&t=U5abQTz6PRmSvOOt3yPlMDjo9wZC3ErQNdE0al4ypKg
