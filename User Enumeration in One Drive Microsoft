@@ -1,0 +1,12 @@
+User Enumeration in One Drive Microsoft:
+
+User enumeration is when a malicious actor can use brute-force to either guess or confirm valid users in a system. User enumeration is often a web application vulnerability, though it can also be found in any system that requires user authentication. Two of the most common areas where user enumeration occurs are in a site's login page and its ‘Forgot Password' functionality. This is user enumeration is existing in
+
+https://lnkd.in/fTQBC-x and
+
+vulnerable parameter is CID value, in above example it is showing as 815c4b6a16632785. I made the parameter guessing attack by collecting CID information from web.archive.org. 
+
+The malicious actor is looking for differences in the server's response based on the validity of submitted credentials.
+
+
+Here we have different cid parameters which I have collected from https://lnkd.in/fhzRuYv and I can able to enumerate all users information for all users as shown in burp software. I enumerate for 100 users and this is for example purpose. More 1000 links are available in web.archive.org. Please go through all links and delete it for all users.
