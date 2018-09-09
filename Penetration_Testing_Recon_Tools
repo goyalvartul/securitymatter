@@ -1,0 +1,245 @@
+System Tools
+
+apt update && apt upgrade
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+apt install -y git wget python python-pip phantomjs xvfb screen slurm gem phantomjs imagemagick graphicsmagick nodejs
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+apt update && apt upgrade
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+apt install -y git wget python python-pip phantomjs xvfb screen slurm gem phantomjs imagemagick graphicsmagick nodejs
+------------------------------------------------------------------
+------------------------------------------------------------------
+Requirements for WebScreenshot
+
+pip install webscreenshot
+pip install selenium
+
+pip install webscreenshot
+pip install selenium
+Requirements for express-photo-gallery
+
+sudo npm install -g npm
+npm install express-photo-gallery
+npm install express
+npm install -g epg-prep
+
+sudo npm install -g npm
+npm install express-photo-gallery
+npm install express
+npm install -g epg-prep
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+Requirements for Aquatone
+
+git clone https://github.com/michenriksen/aquatone.git
+cd aquatone/
+gem install aquatone
+
+git clone https://github.com/michenriksen/aquatone.git
+cd aquatone/
+gem install aquatone
+express-photo-gallery Script
+
+var express = require('express');
+var app = express();
+
+var Gallery = require('express-photo-gallery');
+
+var options = {
+title: 'My Awesome Photo Gallery'
+};
+
+app.use('/photos', Gallery('uber.com', options));
+
+app.listen(3000);
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Recon Process:
+Installation of Aquatone:
+https://github.com/michenriksen/aquatone
+https://www.youtube.com/watch?v=5DDyHnod1wA
+aquatone-discover -d uber.com
+aquatone-scan -d uber.com -t 30 -p small
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Use webscreenshot python file for taking screenshots:
+https://github.com/maaaaz/webscreenshot
+webscreenshot -i /root/aquatone/uber.com/urls.txt -o uber.com
+
+https://github.com/ChrisTruncer/EyeWitness 🙂
+
+httpscreenshot https://github.com/breenmachine/httpscreenshot/
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+
+Sitemapper for me:
+http://www.visualsitemapper.com/
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Do they use a WAF like CloudFront or CloudFlare ?
+Do they use a CMS like Wordpress, Drupal or Joomla ?
+Do they use a framework like AngularJS or CakePHP ?
+What’s the version of Apache ?
+Do they use template engine like Jinja2 or Smarty ?
+
+To get these information about a target, I installed a plugin called Wappalyzer.
+https://github.com/EnableSecurity/wafw00f--> This is another script use for finding the web servers versions.
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Google Dorking:
+site:target.com -www
+site:target.com intitle:”test” -support
+site:target.com ext:php | ext:html
+site:subdomain.target.com
+site:target.com inurl:auth
+site:target.com inurl:dev
+
+
+https://apollonsky.me/growth-hacking-google-dork/
+https://pentest-tools.com/information-gathering/google-hacking
+https://github.com/1N3/Goohak/
+https://github.com/ZephrFish/GoogD0rker/
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Shodan.io : search engine for Internet-connected devices
+If I should present shodan.io in one minute, I would say that it’s like Google but for servers, IoT and all devices which can be connected to Internet.
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+Payload of all the things:
+
+https://github.com/danielmiessler/SecLists
+https://github.com/swisskyrepo/PayloadsAllTheThings
+
+For using these payloads: Please use only:
+
+Dirsearch : https://github.com/maurosoria/dirsearch
+Dirb : Installed by default on Kali Linux
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+For finding GET and POST parameters:
+https://github.com/s0md3v/Arjun
+
+
+Burp Suite is another utility to find get and post Parameters:
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+This is used for extraction for JS files from various js files and use only Burp Suite to extract the js files.
+
+https://github.com/jobertabma/relative-url-extractor
+JSParse:https://github.com/nahamsec/JSParser
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Virtual Host Discovery and this script can help you find Vhost behind a target. You will be surprised how many targets have a Vhost like “admin” or “beta” that are not properly protected!
+
+
+https://github.com/jobertabma/virtual-host-discovery
+
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+Github credentials:
+“vartul.com” API_key
+“vartul.com” secret_key
+“vartul.com” aws_key
+“vartul.com” Password
+“vartul.com” FTP
+“vartul.com” login
+“vartul.com” github_token
+
+There are some github finding tools:
+https://github.com/1N3/Sn1per (for web)
+https://github.com/michenriksen/gitrob (for github)
+https://github.com/dxa4481/truffleHog
+https://github.com/IOActive/RepoSsessed
+https://github.com/anshumanbh/git-all-secrets
+
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+Find archive and old files
+ARCHIVE.ORG
+https://gist.github.com/mhmdiaa/adf6bff70142e5091792841d4b372050
+https://gist.github.com/mhmdiaa/2742c5e147d49a804b408bfed3d32d07
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+For practicing your labs
+
+
+https://github.com/infoslack/awesome-web-hacking
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+Bounty Writeups
+https://github.com/djadmin/awesome-bug-bounty
+https://github.com/ngalongc/bug-bounty-reference
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+This is in combined script for running the recon process:
+
+https://github.com/nahamsec/lazyrecon
+
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+This is only for finding subdomains
+
+https://bitbucket.org/LaNMaSteR53/recon-ng
+https://github.com/michenriksen/aquatone
+https://github.com/aboul3la/Sublist3r
+https://github.com/rbsec/dnscan
+https://github.com/Cleveridge/cleveridge-subdomain-scanner
+https://github.com/guelfoweb/knock
+https://github.com/subfinder/subfinder--->you need to install go language first in your machine.
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Extracting S3 buckets
+
+https://github.com/yasinS/sandcastle
+https://digi.ninja/projects/bucket_finder.php
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+For brute forcing the parameters:
+This tool can be used to brute discover GET and POST parameters
+parameth
+https://github.com/maK-/parameth
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+Platform Identification and CVE searching:
+burp-vulns-scanner
+
+------------------------------------------------------------------
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
