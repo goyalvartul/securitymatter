@@ -1,0 +1,61 @@
+https://github.com/jemshad/dns-tls-proxy/blob/master/dns-proxy.py
+https://github.com/szeraf/DNStoDoTproxy/blob/master/main.py
+
+creation of docker file:
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+N26 SECURITY Challenge
+DNS to DNS-over-TLS proxy
+The following challenge is to write a DNS proxy that listens to conventional DNS and sends it over
+TLS (detailed requirements below).
+Background
+Nowadays, some DNS providers (such as Cloudflare) offer a DNS-over-TLS feature that could let
+us enhance privacy by encrypting our DNS queries.
+Our applications don't handle DNS-over-TLS by default. Your task is to design and create a
+simple DNS to DNS-over-TLS proxy that we could use to enable our application to query a
+DNS-over-TLS server.
+Overview
+Requirements
+From your understanding of the topic, we would expect a working example of a DNS to
+DNS-over-TLS proxy that can:
+1. Handle at least one DNS query, and give a result to the client.
+2. Work over TCP and talk to a DNS-over-TLS server that works over TCP (e.g: Cloudflare).
+Deliverables
+1. The source code.
+2. A Dockerfile, and the different options required to run your software.
+3. A README.md file detailing your implementation, your choices, and answering the
+following questions:
+❏ Imagine this proxy being deployed in an infrastructure. What would be the security
+concerns you would raise?
+❏ How would you integrate that solution in a distributed, microservices-oriented and
+containerized architecture?
+❏ What other improvements do you think would be interesting to add to the project?
+To ease the review process, please upload all deliverables as one file (e.g. .zip) to the link
+provided by your Recruiting Partner. You have 3 days to work on the solution and and we
+strongly advise you to analyse the problem from the start and don’t do it last minute as it could
+take more than 5 hours.
+Note that there is no requirement regarding the programming language you use, but you are
+required to write the code yourself! This means that you cannot use already written software
+like this or this similar project.
+Resources
+Here is some helpful documentation:
+● Cloudflare's explanation of DNS-over-TLS; you can use Cloudflare’s DNS-over-TLS
+feature to test your queries.
+● Feel free to look into these RFCs:
+○ DNS (especially UDP vs. TCP implementations)
+○ DNS-over-tls
+● Use any resource available to you online except third party applications or libraries that do
+everything for you, at the end we are evaluating your code.
+● Use any language you see fit, and any libraries to leverage code already written by
+modules and packages.
+● If needed, here are some links to libraries regarding implementations
+○ Golang: tls, net (udp/tcp lib)
+○ Python: ssl, socket (udp/tcp)
+Bonus points
+If you still want to have fun, we’d love to see you give these features a try:
+● Allow multiple incoming requests at the same time
+● Also handle UDP requests, while still querying tcp on the other side
+● Any other improvements you can think of!
+If you have questions, feel free to contact us at: sre-challenge@n26.com or contact directly your
+Recruiting Partner.
