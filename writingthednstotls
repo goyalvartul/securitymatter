@@ -1,6 +1,9 @@
 https://github.com/jemshad/dns-tls-proxy/blob/master/dns-proxy.py
 https://github.com/szeraf/DNStoDoTproxy/blob/master/main.py
 
+for protection:
+https://medium.com/@davetempleton/setting-up-dns-over-tls-on-pfsense-bd96912c2416
+
 creation of docker file:
 -----------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------
