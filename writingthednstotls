@@ -31,9 +31,17 @@ Deliverables
 following questions:
 ❏ Imagine this proxy being deployed in an infrastructure. What would be the security
 concerns you would raise?
+Answer:
+https://medium.com/@davetempleton/setting-up-dns-over-tls-on-pfsense-bd96912c2416
+
 ❏ How would you integrate that solution in a distributed, microservices-oriented and
 containerized architecture?
+Answer: https://github.com/jemshad/dns-tls-proxy/blob/master/README.md
+
 ❏ What other improvements do you think would be interesting to add to the project?
+Answer:
+https://medium.com/@davetempleton/setting-up-dns-over-tls-on-pfsense-bd96912c2416
+
 To ease the review process, please upload all deliverables as one file (e.g. .zip) to the link
 provided by your Recruiting Partner. You have 3 days to work on the solution and and we
 strongly advise you to analyse the problem from the start and don’t do it last minute as it could
@@ -60,5 +68,8 @@ If you still want to have fun, we’d love to see you give these features a try:
 ● Allow multiple incoming requests at the same time
 ● Also handle UDP requests, while still querying tcp on the other side
 ● Any other improvements you can think of!
+
+Answer: https://medium.com/@davetempleton/setting-up-dns-over-tls-on-pfsense-bd96912c2416
+
 If you have questions, feel free to contact us at: sre-challenge@n26.com or contact directly your
 Recruiting Partner.
