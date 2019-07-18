@@ -38,6 +38,8 @@ https://medium.com/@davetempleton/setting-up-dns-over-tls-on-pfsense-bd96912c241
 containerized architecture?
 Answer: https://github.com/jemshad/dns-tls-proxy/blob/master/README.md
 
+It is better to take this in microservice due to being highly available and scalable, and security is dependent on the designed security of the whole microservices environment, just like If we are running these in docker containers, containers are not that highly isolated as compare to VMs. And they are shairng the same Kernal host and can also communicate with eachother on the same host.
+
 ❏ What other improvements do you think would be interesting to add to the project?
 Answer:
 https://medium.com/@davetempleton/setting-up-dns-over-tls-on-pfsense-bd96912c2416
